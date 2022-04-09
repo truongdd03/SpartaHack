@@ -20,14 +20,14 @@ export class Items {
     }
 
     async update() {
-        await ref.child(this.itemId).set({
+        await ref.child("Items").child(this.itemId).set({
             itemImage: this.itemImage,
             itemName: this.itemName,
         });
     }
 
     async get() {
-        await ref.child(this.itemId).get().then((snapshot) => {
+        await ref.child("Items").child(this.itemId).get().then((snapshot) => {
             const dict = snapshot.val();
             this.itemImage = dict.itemImage;
             this.itemName = dict.itemName;

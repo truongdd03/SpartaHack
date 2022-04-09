@@ -24,7 +24,7 @@ export class Info {
     }
 
     async update() {
-        await ref.child(this.userId).set({
+        await ref.child("Users").child(this.userId).set({
             name: this.name,
             address: this.address,
             phone: this.phone,
@@ -35,7 +35,7 @@ export class Info {
     }
 
     async get() {
-        await ref.child(this.userId).get().then((snapshot) => {
+        await ref.child("Users").child(this.userId).get().then((snapshot) => {
             const dict = snapshot.val();
             this.name = dict.name;
             this.address = dict.address;
