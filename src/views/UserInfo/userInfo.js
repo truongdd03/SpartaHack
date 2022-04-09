@@ -11,4 +11,12 @@ function load() {
 
 function saveClick() {
     console.log(userInfo);
+    var f_name = $("#firstName").val();
+    var l_name = $("#lastName").val();
+    var addr = $("#address").val();
+    var app_num = $("#apt").val();
+    var city = $("#city").val();
+    var zip_code = $("#zip").val();
+    var mail = $("#mail").val();
+    var p_num = $("#phone").val();
 }
