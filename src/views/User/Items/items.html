@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+
+    <script src="../../../index.js"></script>
+    <script src="../../../models/Info.js"></script>
+    <script src="../../../models/Items.js"></script>
+    <script src="../../Authentication/LogIn/logIn.js"></script>
+    <script src="./items.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../HomePage/homePage.css">
+    <link rel="stylesheet" type="text/css" href="../UserInfo/userInfo.css">
+    <link rel="stylesheet" type="text/css" href="../../../font.css">
+    <link rel="stylesheet" type="text/css" href="./items.css">
+</head>
+
+<body onload="load();">
+    <ul>
+        <li id="logo"><a href="default.asp">Logo</a></li>
+        <li style="float: right;"><a href="../UserInfo/userInfo.html">
+                <i id="userIcon" class="fa fa-user"></i>
+            </a></li>
+    </ul>
+    <div class="bd">
+        <div class="bdleft">
+            <img class="circular--square"
+                src="https://www.pngitem.com/pimgs/m/575-5759580_anonymous-avatar-image-png-transparent-png.png" />
+            <h2 class="username"> User name</h2>
+            <div class="buttonWrap">
+                <a href="../UserInfo/userInfo.html" class="link">
+                    <h1 class="button"> Information </h1>
+                </a>
+            </div>
+            <div class="choosing">
+                <h1 class="button"> Items </h1>
+            </div>
+        </div>
+        <div class="bdright">
+            <h2 class="title"> Your Item </h2>
+            <div class="itemContainer">
+                <div class="imgWrap">
+                    <img src="https://cdn.pixabay.com/photo/2013/07/12/18/36/pencil-153561__340.png" class="itemImg">
+                </div>
+                <div class="mahi_holder">
+                    <div class="container">
+                        <div class="row bg_1">
+                            <div class="col-3">
+                                <input class="effect-1" type="text" placeholder="First name" id="firstName">
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <h2 id="cancel"> Cancel </h2>
+                <h2 id="save" onclick="saveClick()"> Save </h2>
+            </div>
+        </div>
+</body>
+</body>
+
+</html>

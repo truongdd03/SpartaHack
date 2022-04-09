@@ -57,3 +57,24 @@
 .username {
     margin-top: 5px;
 }
+
+.buttonWrap {
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.button {
+    font-size: 25px;
+    height: 100%;
+}
+
+.choosing {
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    background-color: hsl(120, 1%, 79%);
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
