@@ -1,0 +1,59 @@
+.bd {
+    height: 650px;
+    width: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bdleft {
+    float: left;
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    text-align: center;
+}
+
+.bdright {
+    float: right;
+    width: 80%;
+    padding: 20px;
+    height: 100%;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.buttons {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+}
+
+#save {
+    display: inline-block;
+    margin-left: 20%;
+}
+
+#cancel {
+    display: inline-block;
+    color: red;
+}
+
+.circular--square {
+    border-radius: 50%;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.username {
+    margin-top: 5px;
+}
