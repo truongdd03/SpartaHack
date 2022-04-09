@@ -11,7 +11,7 @@ function load() {
                 $("#apt").val(userInfo.apt_num);
                 $("#city").val(userInfo.city);
                 $("#zip").val(userInfo.zip_code);
-                $("#mail").val(userInfo.email);
+                $("#email").val(userInfo.email);
                 $("#phone").val(userInfo.phone);
             });
         }
@@ -25,7 +25,9 @@ function saveClick() {
     userInfo.apt_num = $("#apt").val();
     userInfo.cit = $("#city").val();
     userInfo.zip_code = $("#zip").val();
-    userInfo.email = $("#mail").val();
+    userInfo.email = $("#email").val();
     userInfo.phone = $("#phone").val();
-    userInfo.update();
+    userInfo.update().then(() => {
+        window.alert("Successfully saved!");
+    });
 }

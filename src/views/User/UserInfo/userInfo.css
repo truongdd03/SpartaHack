@@ -40,12 +40,7 @@
 
 #save {
     display: inline-block;
-    margin-left: 20%;
-}
-
-#cancel {
-    display: inline-block;
-    color: red;
+    cursor: pointer;
 }
 
 .circular--square {
