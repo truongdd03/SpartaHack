@@ -41,7 +41,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-spartahack-e0815-firebase-adminsdk-5bk5j-4e1ab3c746.json
 
 
 # Snowpack dependency directory (https://snowpack.dev/)
