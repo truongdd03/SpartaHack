@@ -1,5 +1,23 @@
 .itemImg {
-    height: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.imgWrap {
     width: 50%;
-    background-color: black;
+    height: 300px;
+    text-align: center;
+    float: right;
+    margin-top: -250px;
+}
+
+#nameWrap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.descriptionWrap {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: -256px;
 }
