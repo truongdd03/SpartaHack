@@ -9,36 +9,24 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    height: 60px;
 }
 
 li {
-    float: left;
-    display: table-cell;
-    width: 100px;
-    height: 100%;
-}
-
-#logo {
-    margin-left: 10px;
-    width: 300px;
+    float: center;
 }
 
 li a {
     display: block;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    height: 100%;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
+    text-decoration: none;
 }
 
 /************************
@@ -46,24 +34,49 @@ Tinder Template by Miami
 ************************/
 .tbg {
     height: 650px;
-    width: 400px;
-    background-color: #fff;
+    width: 55em;
+    background-color: #6EB568;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 1.7em;
     border: 1px solid #c0c0c0;
+    border-radius: 0em 5em 0em 2em;
 }
+
+ 
 
 .tbgwrap {
-    padding: 10px;
+    padding: 1em;
+}
+.otheruser {
+    font-family: 'Poppins', sans-serif;
+    color: #402E8C;
+    font-size: 1.35em;
+    margin-top: -20.7em;
+    margin-left: 2.8em;
+    margin-right: 25em;
+}
+.userarea {
+    font-family: 'Poppins', sans-serif;
+    color: #402e8c;
+    font-size: 1.35em;
+    margin-left: 10em;
+    margin-top: -1.53em;
 }
 
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+    padding: 1.2em 35em 1em 4.8em;
+    line-height: 2.4em;
+    
+}
 .theader {
     height: 65px;
     border-bottom: 1px solid #c0c0c0;
 }
 
 .theader i.fa-comments {
-    color: #c0c0c0;
+    color: #ee8d8d;
     font-size: 40px;
     display: inline-block;
     float: right;
@@ -91,12 +104,13 @@ Tinder Template by Miami
 }
 
 .tphoto {
-    width: 350px;
-    height: 350px;
+    width: 25em;
+    height: 23em;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
-    top: 15px;
+    top: 2.5em;
+    margin-left: 26em;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
@@ -110,14 +124,24 @@ Tinder Template by Miami
 .tphoto img {}
 
 .tname {
-    padding: 15px;
-    font-size: 20px;
-    font-family: 'Helvetica', sans-serif;
+    padding: none;
+    font-size: 2.6em;
+    font-family: 'Poppins', sans-serif;
     float: left;
+    padding-top: 0.75em;
+    padding-left: 1.4em;
+    left: 8em;
+    margin-top: 13;
+    color: #2A1E5C;
+    font-weight: 500;
+    
 }
 
 .tname .age {
-    font-weight: 200;
+    
+    color: #2A1E5C;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500em;
 }
 
 .fa-users,
@@ -131,44 +155,75 @@ Tinder Template by Miami
 
 .tno {
     background-color: #fff;
-    height: 120px;
-    width: 120px;
+    height: 6.5em;
+    width: 6.5em;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
     position: relative;
     display: inline-block;
-    top: 50px;
-    left: 5%;
-    border: 10px solid #f0f0f0;
+    top: 4.2em;
+    left: 29em;
+    border: 0.5em solid #f0f0f0;
+    margin: -1em;
+    transition: all .2s ease-in-out;
+    z-index:1000;
+    text-align: center;
+    cursor:pointer;
 }
 
 .tno i {
     color: #ff695b;
-    font-size: 80px;
-    padding: 17px 28px;
+    font-size: 5em;
+    padding: 0.15em 0.247em;
+    
+}
+
+.tno:after{
+    position: absolute;
+    left: 10px;
+    content: '';
+    height: 40px;
+    width: 275px;
+    border-bottom: solid 3px #019fb6;
+    transition: left 250ms ease-in-out, right 250ms ease-in-out;
+    opacity: 0;
+}
+
+.tno:hover{
+    background-color: #91160b;
+}
+
+.tno:hover:after{
+    background-color: #ff695b;
 }
 
 .tyes {
     background-color: #fff;
-    height: 120px;
-    width: 120px;
+    height: 6.5em;
+    width: 6.5em;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
     position: relative;
     display: inline-block;
-    top: 48px;
-    left: 20%;
-    border: 10px solid #f0f0f0;
+    top: 4.1em;
+    left: 33em;
+    border: 0.5em solid #f0f0f0;
+    margin: -1em;
+    transition: all .2s ease-in-out;
+    z-index:1000;
+    text-align: center;
+    cursor:pointer;
 }
 
 .tyes i {
     color: #5de19c;
     font-size: 60px;
-    padding: 35px 30px;
+    padding: 0.42em 0.29em;
+    left: 30em;
 }
 
 .credit {
@@ -187,6 +242,6 @@ Tinder Template by Miami
     color: #c0c0c0;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
 }
