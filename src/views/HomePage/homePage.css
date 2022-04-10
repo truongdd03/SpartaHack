@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    background-color: rgb(164, 239, 148);
 }
 
 ul {
@@ -9,18 +10,32 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    height: 60px;
 }
 
 li {
+    float: left;
+    display: table-cell;
+    width: 100px;
+    height: 100%;
+}
+
+#logo {
+    margin-left: 10px;
+    width: 300px;
     float: center;
 }
 
 li a {
     display: block;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    height: 100%;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -35,7 +50,7 @@ Tinder Template by Miami
 .tbg {
     height: 650px;
     width: 55em;
-    background-color: #6EB568;
+    background-color: white;
     margin: 0 auto;
     margin-top: 1.7em;
     border: 1px solid #c0c0c0;
