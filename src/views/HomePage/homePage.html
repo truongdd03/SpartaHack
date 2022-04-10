@@ -8,6 +8,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
 
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +23,13 @@
     <link rel="stylesheet" type="text/css" href="./homePage.css">
     <link rel="stylesheet" type="text/css" href="../../font.css">
 
-    <!-- <script type="module" src="index.js"></script> -->
+    <script src="../../index.js"></script>
+    <script src="../../models/Info.js"></script>
+    <script src="../../models/Items.js"></script>
+    <script src="./homePage.js"></script>
 </head>
 
-<body>
+<body onload="load();">
     <ul>
         <li style="float: right;"><a href="../User/UserInfo/userInfo.html">
                 <i id="userIcon" class="fa fa-user"></i>
@@ -31,24 +37,25 @@
         <li><a href="./homePage.html">Logo</a></li>
     </ul>
     <div class="tbg">
-        <div class="tbgwrap">
-            <div class="tname"><h2>Pencil</h2></div>
-            <div class="tphoto">
-                <img src="https://cdn.pixabay.com/photo/2013/07/12/18/36/pencil-153561__340.png" title="tphoto"
-                    alt="Tinder Photo" />
+        <div class="tmp">
+            <div class="tname">
+                <h2 id="itemName"></h2>
             </div>
-            <div class="otheruser">Sir Useralot</div>
-            <div class="description">Lorem ipsum dolor sit amet, eum congue tantas principes ex. Etiam mazim labitur pro
-                ei, sea sale illud nostrum ne. Et ius mazim invenire suscipiantur. Eam quodsi vivendo denique cu.
+            <div class="otheruser">
+                <p id="userName"></p>
+            </div>
+            <div class="description">
+                <p id="descriptionId">abxc</p>
+            </div>
+        </div>
 
-                Falli virtute eu vim, case graeci conclusionemque et quo. Ne pro labore consequat eloquentiam. Nam at
-                mutat nullam dicunt, detracto eleifend prodesset mel ne. Ut pri malis partem dissentiunt. Vis ad dicta
-                persecuti, ei mei congue malorum reprehendunt. Per at soleat iisque.
-            </div>
-            <div class="tcontrols">
-                <div class="tno"><i class="fa fa-times" aria-hidden="true"></i></div>
-                <div class="tyes"><i class="fa fa-check" aria-hidden="true"></i></div>
-            </div>
+        <div class="tphoto">
+            <img src="https://firebasestorage.googleapis.com/v0/b/spartahack-e0815.appspot.com/o/Images%2FHGzMASTf3dVQJCwAeIFoq4YXmvG2.jpg?alt=media&token=8cf19d50-35b6-488f-b6c4-ce30b291659e"
+                id="itemImage" />
+        </div>
+        <div class="tcontrols">
+            <div class="tno"><i class="fa fa-times" aria-hidden="true" onclick="noClick();"></i></div>
+            <div class="tyes"><i class="fa fa-check" aria-hidden="true" onclick="yesClick();"></i></div>
         </div>
     </div>
     </div>
