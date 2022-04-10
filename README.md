@@ -30,3 +30,6 @@ The website will be ready at http://localhost:3000/. The account for testing is 
 Email: b@gmail.com
 Password: 123456
 ```
+
+## Demo
+![](demo.gif)
