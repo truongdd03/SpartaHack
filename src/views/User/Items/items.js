@@ -9,7 +9,6 @@ function load() {
                 $("#itemName").val(items.itemName);
                 $("#description").val(items.description);
                 $("#itemImage").attr("src", items.itemImage);
-                console.log(items.itemImage);
             });
         }
     });

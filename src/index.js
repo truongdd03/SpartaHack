@@ -10,3 +10,7 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+
+function load() {
+    window.location.replace("http://localhost:3000/views/Authentication/LogIn/logIn.html");
+}
