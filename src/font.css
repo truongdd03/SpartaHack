@@ -2,6 +2,19 @@
 body{
   font-family: 'Muli', sans-serif;
 }
+
+.logo {
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  margin-left: 20px;
+  border-radius: 30px;
+}
+
+.logo_name {
+  margin-top: -10px;
+}
+
 h2 {
     font-family: 'Damion', cursive;
     font-weight: 400;
