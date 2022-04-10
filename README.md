@@ -1,5 +1,7 @@
 # SpartaHack - Barter
 
+**Winner of Best Use of Google Cloud**
+
 Why trash it if for nothing when you can exchange it for something? **Barter** connecting you with people who would exchange your guitar sitting in your attic for 9 months that you never used for something you would use.
 
 ## Barter - for a better world!
